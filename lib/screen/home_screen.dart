@@ -11,10 +11,15 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('Calculator'),
-        centerTitle: true,
-      ),
+      appBar: _buildAppbar(),
     );
   }
+
+  AppBar _buildAppbar(){
+    return AppBar(
+      title: const Text('Calculator'),
+      centerTitle: true,
+    );
+  }
+
 }
